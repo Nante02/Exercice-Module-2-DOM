@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Exercice-1</title>
+</head>
+<body>
+    <h1>Exercice DOM 1</h1>
+    <h2><a href="exercice-2.html">Exercice-2</a></h2>
+    <form action="">
+        <div class="element-form">
+            <label for="ranger">Row : </label>
+            <input type="number" name="ranger" id="ranger">
+        </div>
+        <div class="element-form">
+            <label for="colonne">Col : </label>
+            <input type="number" name="colonne" id="colonne">
+        </div>
+        <button type="button" onclick="creatTable()">Creer</button>
+    </form>
+    <table>
+        <tr>
+            <th class="cell color-one" onclick="changeOne()"> . </th>
+            <th class="cell color-two" onclick="changeTwo()"> . </th>
+            <th class="cell color-three" onclick="changeThree()"> . </th>
+            <th class="cell color-four" onclick="changeFour()"> . </th>
+        </tr>
+
+    </table>
+
+    <hr id="limite-one">
+    <table id="result">
+
+    </table>
+    <script src="main.js"></script>
+</body>
+</html>
